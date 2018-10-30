@@ -1,9 +1,9 @@
 development:
   adapter: sqlite3
-  database: ./db/development.db
+  database: ./db/development.sqlite3
 test:
   adapter: sqlite3
-  database: ./db/testing.db
+  database: ./db/testing.sqlite3
 production:
   adapter: postgresql
   database: sch_database production

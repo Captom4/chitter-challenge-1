@@ -14,6 +14,13 @@ rake db:seed
 ```
 rake db:reset
 ```
+* to run the server locally type in the command
+```
+shotgun
+```
+## Testing
+WIP
+
 ## Resources 
 ### Resources used for basis of the MVC layout of application:
 https://github.com/salma71/sinatra_todo_app/blob/master

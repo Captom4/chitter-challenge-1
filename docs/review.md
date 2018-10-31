@@ -342,7 +342,7 @@ post '/password_reset' do
   end
 end
 
-# models/user.rb
+users
 class User
 
   def self.reset_password(email:)

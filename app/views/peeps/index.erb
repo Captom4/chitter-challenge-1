@@ -1,0 +1,13 @@
+<h1>List of all peeps</h1>
+<a href="/peeps/new">New Peep</a>
+<%@peeps.each do |peep| %>
+  <h2>
+    <%= peep.title %>
+  </h2>
+  <p>
+    <%= peep.content %>
+  </p>
+  <a href="/peeps/<%= peep.id%>">View</a> |
+  <a href="/peeps/<%= peep.id%>/edit">Edit</a> |
+  <a href="/peeps/<%= peep.id%>/delete">Delete</a>
+<% end %>

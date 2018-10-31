@@ -3,7 +3,7 @@ class AddPeeps < ActiveRecord::Migration[5.2]
     create_table :peeps do |t|
       t.string :title
       t.text :content
-      t.integer :author_id # the peep will belong to the user
+      # t.integer :user_id # the peeps will belong to the users
       t.timestamps null: false
     end
   end

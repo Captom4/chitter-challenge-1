@@ -1,0 +1,2 @@
+class ChitController < ApplicationController
+end

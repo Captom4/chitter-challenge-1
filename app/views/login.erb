@@ -1,23 +1,59 @@
-<title>Chitter Login/Sign Up</title>
-<h1>This is the login page</h1>
-<div></div>
-<h2>Log in</h2>
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    body {margin:0;}
+
+    .navbar {
+      overflow: hidden;
+      background-color: #333;
+      position: fixed;
+      top: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background: #ddd;
+      color: black;
+    }
+
+     .main {
+      padding: 16px;
+      margin-top: 30px;
+      height: 1500px;
+    }
+  </style>
+</head>
+<body>
+<title>Login</title>
+<div class="navbar">
+  <a href="index">Home</a>
+  <a href="login">Login</a>
+</div>
+<main>
+<p1>Log in</p1>
 <form method="post" action="/login/new">
-  <input type="text" name="username" placeholder="Username" />
-  <input type="text" name="password" placeholder="Password" />
-  <input type="submit" value="Submit" />
+  <input type="text" name="username" placeholder="Username" /><br>
+  <input type="text" name="password" placeholder="Password" /><br>
+  <input type="submit" value="Login" /><br>
 </form>
-<div></div>
-<h2>Sign up</h2>
+<p2>Sign up</p2>
 <form method="post" action="/login/sign_up">
   <input type="text" name="su_user_name" placeholder="Sign up Username" /><br>
   <input type="text" name="su_password" placeholder="Sign up Password" /><br>
   <input type="text" name="su_email" placeholder="Sign up email" /><br>
-  <input type="submit" value="Sign up Submit" />
+  <input type="submit" value="Sign up" />
 </form>
-
-<ul>
-  <li><a href="index">index</a></li>
-  <li><a href="login">login</a></li>
-  <li><a href=""></a></li>
-</ul>
+</main>
+</body>

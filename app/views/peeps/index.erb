@@ -9,5 +9,8 @@
   </p>
   <a href="/peeps/<%= peep.id%>">View</a> |
   <a href="/peeps/<%= peep.id%>/edit">Edit</a> |
-  <a href="/peeps/<%= peep.id%>/delete">Delete</a>
+  <form action="/peeps/<%= peep.id %>/delete" method="POST">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" value="Delete">
+  </form>
 <% end %>

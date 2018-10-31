@@ -1,1 +1,12 @@
-<h1>shows a single peep</h1>
+<h2>
+  <%= @peep.title %>
+</h2>
+<p>
+  <%= @peep.content %>
+</p>
+<a href="/peeps/<%= @peep.id%>">View</a> |
+<a href="/peeps/<%= @peep.id%>/edit">Edit</a> |
+<form action="/peeps/<%= @peep.id %>/delete" method="POST">
+  <input type="hidden" name="_method" value="DELETE">
+  <input type="submit" value="Delete">
+</form>

@@ -8,7 +8,12 @@ class ApplicationController < Sinatra::Base
     enable :sessions
   end
 
-  get '/' do
+  get '/index' do
     erb :index
   end
+
+  get '/login' do
+    erb :login
+  end
+
 end

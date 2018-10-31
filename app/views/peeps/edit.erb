@@ -1,16 +1,10 @@
 <h1>Edit a specific peep</h1>
-<%= form_with(model: peep, local: true) do |form| %>
-  <div class="field">
-    <%= form.label :title %>
-    <%= form.text_field :title %>
-  </div>
-
-  <div class="field">
-    <%= form.label :content %>
-    <%= form.text_area :content %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>
+<form action="/peeps/<%= @peep.id %>" method="POST">
+  <input id="hidden" type="hidden" name="_method" value="patch">
+  Enter your peep:<br>
+  <textarea rows="4" cols="50" type="text" name="content">
+    <%= @peep.content %>
+  </textarea>
+  <input type="submit" value="Update">
+</form>
+<a href="/peeps/<%= @peep.id %>">Back</a>

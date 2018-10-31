@@ -2,13 +2,10 @@
 <a href="/peeps/new">New Peep</a>
 <%@peeps.each do |peep| %>
   <h2>
-    <%= peep.title %>
-  </h2>
-  <p>
     <%= peep.content %>
-  </p>
+  </h2>
   <a href="/peeps/<%= peep.id%>">View</a> |
-  <a href="/peeps/<%= peep.id%>/edit">Edit</a> |
+<!--  <a href="/peeps/<%#= peep.id%>/edit">Edit</a> |-->
   <form action="/peeps/<%= peep.id %>/delete" method="POST">
     <input type="hidden" name="_method" value="DELETE">
     <input type="submit" value="Delete">

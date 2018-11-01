@@ -1,10 +1,14 @@
 <h1>List of all peeps</h1>
-<a href="/peeps/new">New Peep</a>
+  <form action="/peeps/new">
+    <input type="submit" value="New">
+  </form>
 <%@peeps.each do |peep| %>
   <h2>
     <%= peep.content %>
   </h2>
-  <a href="/peeps/<%= peep.id%>">View</a> |
+  <form action="/peeps/<%= peep.id%>">
+    <input type="submit" value="View">
+  </form>
 <!--  <a href="/peeps/<%#= peep.id%>/edit">Edit</a> |-->
   <form action="/peeps/<%= peep.id %>/delete" method="POST">
     <input type="hidden" name="_method" value="DELETE">

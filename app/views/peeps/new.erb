@@ -1,7 +1,9 @@
 <h1>Create a new peep</h1>
 <form action="/peeps" method="POST">
   Enter your peep:<br>
-  <textarea rows="4" cols="50" type="text" name="content" placeholder="what do you want to say"></textarea>
+  <textarea rows="4" cols="50" type="text" name="content" placeholder="what do you want to say"></textarea><br>
   <input type="submit" value="Submit">
 </form>
-<a href="/peeps">Back</a>
+<form action="/peeps">
+  <input type="submit" value="Back">
+</form>
